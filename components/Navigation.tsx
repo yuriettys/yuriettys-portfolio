@@ -21,7 +21,7 @@ export const Navigation = () => {
             <NextLink href="/">Profile</NextLink>
           </ListItem>
           <ListItem>
-            <NextLink href="/history">History</NextLink>
+            <NextLink href="/story">Story</NextLink>
           </ListItem>
         </List>
       </Box>
