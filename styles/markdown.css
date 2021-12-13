@@ -1,0 +1,68 @@
+.markdown-style h1,
+.markdown-style h2,
+.markdown-style h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.markdown-style h2 {
+  font-weight: 600;
+  padding: 0.3em 0 0.3em 8px;
+  font-size: 1.5em;
+  border-left: #ea996a 8px solid;
+}
+
+.markdown-style h3 {
+  font-weight: 600;
+  font-size: 1.25em;
+  padding: 0.3em 0 0.3em 8px;
+  border-left: #b5d7d9 8px solid;
+}
+
+.markdown-style p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 180%;
+}
+
+.markdown-style ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 2em;
+}
+
+.markdown-style ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-style hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid #1e7c88;
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #1e7c88;
+  border: 0;
+}
+
+.markdown-style a {
+  background-color: transparent;
+  color: #1e7c88;
+  text-decoration: none;
+}
+
+.markdown-style a:active,
+.markdown-style a:hover {
+  outline-width: 0;
+}
+
+.markdown-style a:hover {
+  text-decoration: underline;
+}
+
+.markdown-style img {
+  margin: 24px auto;
+}

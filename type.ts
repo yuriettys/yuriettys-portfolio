@@ -5,4 +5,5 @@ export type PostMetaData = {
   description: string;
   title: string;
   image: string;
+  role: string;
 };
