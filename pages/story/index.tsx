@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import { Link, Text, Grid, GridItem, Stack } from "@chakra-ui/react";
 import { PostMetaData } from "../../type";
 import NextLink from "next/link";
+import Head from "next/head";
 import { Navigation } from "../../components/Navigation";
 import { ContentBox } from "../../components/ContentBox";
 
@@ -18,6 +19,11 @@ type Props = {
 const StoryIndex = ({ posts }: Props) => {
   return (
     <>
+      <Head>
+        <title>yuriettys portfolio</title>
+        <meta name="description" content="story一覧" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Grid
         gridTemplateColumns="200px 1fr"
         height="100%"
