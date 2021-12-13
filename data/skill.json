@@ -5,27 +5,27 @@
   },
   {
     "name": "企画立案 / 改善提案",
-    "value": 100
+    "value": 95
   },
   {
     "name": "チームビルディング ",
-    "value": 80
+    "value": 75
   },
   {
     "name": "ワイヤーフレーム作成",
-    "value": 80
+    "value": 60
   },
   {
     "name": "ワークショップの開催",
     "value": 80
   },
   {
-    "name": "UX体験設計",
-    "value": 80
+    "name": "UX設計",
+    "value": 85
   },
   {
     "name": "フロントエンド開発",
-    "value": 60
+    "value": 65
   },
   {
     "name": "効果検証",
