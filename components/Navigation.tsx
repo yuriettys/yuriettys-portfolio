@@ -1,4 +1,4 @@
-import { Box, Flex, Image, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, List, ListItem, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 
@@ -17,7 +17,15 @@ export const Navigation = () => {
         <Text fontSize="lg" fontWeight={600} marginTop={4}>
           Nakajima Yurie
         </Text>
-        <Text>@yuriettys</Text>
+        <Text>
+          <Link
+            href="https://github.com/yuriettys"
+            target={"_blank"}
+            rel={"noopener"}
+          >
+            @yuriettys
+          </Link>
+        </Text>
       </Flex>
       <Box as="nav" marginTop={40} textAlign={"center"}>
         <List spacing={5}>
