@@ -1,3 +1,3 @@
 ## yuriettys portfolio
 
-@yuriettys のポートフォリオです。
+@yuriettys のポートフォリオです 🚀
