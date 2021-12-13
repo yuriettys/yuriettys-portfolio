@@ -8,7 +8,6 @@ import {
   Flex,
   Heading,
   Progress,
-  Image,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -40,12 +39,12 @@ const Home: NextPage = () => {
         <Grid
           backgroundColor="#F5F5F5"
           padding={8}
-          gridTemplateColumns="70% 1fr"
+          gridTemplateColumns={{ sm: "1fr", md: "50% 1fr", xl: "70% 1fr" }}
           gridTemplateRows="auto auto auto"
           gap="32px"
           alignContent="flex-start"
         >
-          <Heading as="h1" fontSize="xl" gridColumn="1/3">
+          <Heading as="h1" fontSize="xl" gridColumn={{ sm: "1", md: "1/3" }}>
             Profile
           </Heading>
           <ContentBox title="Bio">

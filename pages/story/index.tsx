@@ -29,8 +29,7 @@ const StoryIndex = ({ posts }: Props) => {
         <Grid
           backgroundColor="#F5F5F5"
           padding={8}
-          gridTemplateColumns="70% 1fr"
-          gridTemplateRows="auto auto auto"
+          gridTemplateColumns="1fr"
           gap="32px"
           alignContent="flex-start"
         >

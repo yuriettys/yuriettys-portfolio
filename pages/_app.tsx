@@ -2,10 +2,10 @@ import "../styles/globals.css";
 import "../styles/markdown.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
-
+import { theme } from "../lib/breakpoint";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   );
