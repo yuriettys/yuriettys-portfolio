@@ -1,6 +1,10 @@
 import { Box, Flex, Image, List, ListItem, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
+
 export const Navigation = () => {
+  const router = useRouter();
+  const isActivePath = (pathname: string) => pathname === router.pathname;
   return (
     <Box bgColor="#F3EBE2" padding={8} paddingTop={32} height="100%">
       <Flex flexDirection={"column"} alignItems={"center"}>
@@ -17,10 +21,10 @@ export const Navigation = () => {
       </Flex>
       <Box as="nav" marginTop={40} textAlign={"center"}>
         <List spacing={5}>
-          <ListItem fontWeight={600}>
+          <ListItem fontWeight={isActivePath("/") ? "600" : "400"}>
             <NextLink href="/">Profile</NextLink>
           </ListItem>
-          <ListItem>
+          <ListItem fontWeight={isActivePath("/story") ? "600" : "400"}>
             <NextLink href="/story">Story</NextLink>
           </ListItem>
         </List>

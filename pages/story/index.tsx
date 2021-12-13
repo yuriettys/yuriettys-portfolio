@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import matter from "gray-matter";
-import { Box, Text, Grid, GridItem, Stack } from "@chakra-ui/react";
+import { Link, Text, Grid, GridItem, Stack } from "@chakra-ui/react";
 import { PostMetaData } from "../../type";
 import NextLink from "next/link";
 import { Navigation } from "../../components/Navigation";
@@ -38,14 +38,14 @@ const StoryIndex = ({ posts }: Props) => {
             <Stack>
               {posts.map(({ id, data }) => {
                 return (
-                  <NextLink href={`/story/${id}`}>
-                    <Box key={id} p={2} borderBottom="1px solid #F7F1EC">
+                  <NextLink passHref href={`/story/${id}`} key={id}>
+                    <Link p={2} borderBottom="1px solid #F7F1EC">
                       <Text fontSize="sm" color="#04565C">
                         {data.term}
                       </Text>
-                      <Text>{data.name}</Text>
                       <Text>{data.title}</Text>
-                    </Box>
+                      <Text>{data.role}</Text>
+                    </Link>
                   </NextLink>
                 );
               })}
