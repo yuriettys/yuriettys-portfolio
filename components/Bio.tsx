@@ -2,7 +2,7 @@ import { Grid, Text } from "@chakra-ui/react";
 import { ContentBox } from "./ContentBox";
 
 type Props = {
-  items: {}[];
+  items: string[];
 };
 
 export const Bio = ({ items }: Props) => {

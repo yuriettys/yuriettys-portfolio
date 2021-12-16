@@ -3,7 +3,7 @@ import { ContentBox } from "./ContentBox";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 
 type Props = {
-  items: {}[];
+  items: string[];
 };
 
 export const Like = ({ items }: Props) => {
