@@ -1,6 +1,16 @@
-import { Box, Flex, Image, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Icon,
+  Image,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export const Navigation = () => {
   const router = useRouter();
@@ -44,6 +54,16 @@ export const Navigation = () => {
           </ListItem>
           <ListItem fontWeight={isActivePath("/story") ? "600" : "400"}>
             <NextLink href="/story">Story</NextLink>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://github.com/yuriettys/yuriettys-portfolio"
+              target={"_blank"}
+              rel={"noopener"}
+            >
+              Repository
+              <Icon as={ExternalLinkIcon} />
+            </Link>
           </ListItem>
         </List>
       </Box>
