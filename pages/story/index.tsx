@@ -30,7 +30,7 @@ const StoryIndex = ({ posts }: Props) => {
         height="100%"
         gridTemplateRows="1fr"
       >
-        <GridItem position={{ sm: "sticky" }} top={{ sm: 0 }}>
+        <GridItem>
           <Navigation />
         </GridItem>
         <Grid
