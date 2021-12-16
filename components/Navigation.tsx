@@ -17,7 +17,7 @@ export const Navigation = () => {
           src="https://pbs.twimg.com/profile_images/1071207669170495488/onOG5c38_400x400.jpg"
           alt="メンダコの画像"
           borderRadius="50%"
-          width="100px"
+          height="100"
         />
         <Text fontSize="lg" fontWeight={600} marginTop={4}>
           Nakajima Yurie
