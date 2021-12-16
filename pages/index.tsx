@@ -17,9 +17,10 @@ import bioJson from "../data/bio.json";
 import likeJson from "../data/like.json";
 import skillJson from "../data/skill.json";
 import historyJson from "../data/history.json";
-import { CheckCircleIcon } from "@chakra-ui/icons";
 import { History } from "../components/History";
 import { Skill } from "../components/Skill";
+import { Like } from "../components/Like";
+import { Bio } from "../components/Bio";
 
 const Home: NextPage = () => {
   return (
@@ -49,27 +50,10 @@ const Home: NextPage = () => {
           <Heading as="h1" fontSize="xl" gridColumn={{ sm: "1", md: "1/3" }}>
             Profile
           </Heading>
-          <ContentBox title="Bio">
-            <Grid gap="4">
-              {bioJson.map((text, index) => {
-                return <Text key={index}>{text}</Text>;
-              })}
-            </Grid>
-          </ContentBox>
+          <Bio items={bioJson} />
           <History items={historyJson} />
           <Skill items={skillJson} />
-          <ContentBox title="Like">
-            <List spacing={3}>
-              {likeJson.map((text, index) => {
-                return (
-                  <ListItem key={index}>
-                    <ListIcon as={CheckCircleIcon} color="#04565C" />
-                    {text}
-                  </ListItem>
-                );
-              })}
-            </List>
-          </ContentBox>
+          <Like items={likeJson} />
         </Grid>
       </Grid>
     </>
