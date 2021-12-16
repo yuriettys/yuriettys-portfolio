@@ -21,7 +21,8 @@ const StoryDetail = ({ data, content }: PostProps) => {
       </Head>
       <Box as="main" height="100%">
         <Grid
-          gridTemplateColumns="200px 1fr"
+          display={{ sm: "block", md: "grid" }}
+          gridTemplateColumns={{ sm: "1fr", md: "200px 1fr" }}
           height="100%"
           gridTemplateRows="1fr"
         >
@@ -30,7 +31,7 @@ const StoryDetail = ({ data, content }: PostProps) => {
           </GridItem>
           <Grid padding={0} overflow="hidden" maxHeight={"100%"}>
             <Box overflow="auto">
-              <Box padding="32px 80px">
+              <Box padding={{ sm: 8, md: "32px 80px" }}>
                 <Heading as="h1">{data.title}</Heading>
                 <Box margin="40px 0 48px">
                   <Text fontSize="sm">{data.term}</Text>

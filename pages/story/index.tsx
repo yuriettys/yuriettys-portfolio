@@ -25,19 +25,21 @@ const StoryIndex = ({ posts }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Grid
-        gridTemplateColumns="200px 1fr"
+        display={{ sm: "block", md: "grid" }}
+        gridTemplateColumns={{ sm: "1fr", md: "200px 1fr" }}
         height="100%"
         gridTemplateRows="1fr"
       >
-        <GridItem>
+        <GridItem position={{ sm: "sticky" }} top={{ sm: 0 }}>
           <Navigation />
         </GridItem>
         <Grid
           backgroundColor="#F5F5F5"
           padding={8}
           gridTemplateColumns="1fr"
-          gap="32px"
+          gap={{ sm: 2, md: 8 }}
           alignContent="flex-start"
+          height="100vh"
         >
           <ContentBox title="Story">
             <Stack>

@@ -21,11 +21,12 @@ const Home: NextPage = () => {
       </Head>
 
       <Grid
-        gridTemplateColumns="200px 1fr"
+        display={{ sm: "block", md: "grid" }}
+        gridTemplateColumns={{ sm: "1fr", md: "200px 1fr" }}
         height="100%"
         gridTemplateRows="1fr"
       >
-        <GridItem>
+        <GridItem position={{ sm: "sticky" }} top={{ sm: 0 }}>
           <Navigation />
         </GridItem>
         <Grid
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
           padding={8}
           gridTemplateColumns={{ sm: "1fr", md: "50% 1fr", xl: "70% 1fr" }}
           gridTemplateRows="auto auto auto"
-          gap="32px"
+          gap={8}
           alignContent="flex-start"
         >
           <Heading as="h1" fontSize="xl" gridColumn={{ sm: "1", md: "1/3" }}>

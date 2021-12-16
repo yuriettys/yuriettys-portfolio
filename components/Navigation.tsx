@@ -6,7 +6,12 @@ export const Navigation = () => {
   const router = useRouter();
   const isActivePath = (pathname: string) => pathname === router.pathname;
   return (
-    <Box bgColor="#F3EBE2" padding={8} paddingTop={32} height="100%">
+    <Box
+      bgColor="#F3EBE2"
+      padding={8}
+      paddingTop={{ sm: 10, md: 32 }}
+      height={{ sm: "10%", md: "100%" }}
+    >
       <Flex flexDirection={"column"} alignItems={"center"}>
         <Image
           src="https://pbs.twimg.com/profile_images/1071207669170495488/onOG5c38_400x400.jpg"
@@ -27,8 +32,13 @@ export const Navigation = () => {
           </Link>
         </Text>
       </Flex>
-      <Box as="nav" marginTop={40} textAlign={"center"}>
-        <List spacing={5}>
+      <Box as="nav" marginTop={{ sm: 8, md: 40 }} textAlign={"center"}>
+        <List
+          spacing={{ md: 5 }}
+          display={{ sm: "flex", md: "block" }}
+          flexDirection={{ sm: "row" }}
+          justifyContent={{ sm: "space-around" }}
+        >
           <ListItem fontWeight={isActivePath("/") ? "600" : "400"}>
             <NextLink href="/">Profile</NextLink>
           </ListItem>
