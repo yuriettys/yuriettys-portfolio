@@ -1,4 +1,4 @@
-import { Grid, List, ListIcon, ListItem } from "@chakra-ui/react";
+import { List, ListIcon, ListItem } from "@chakra-ui/react";
 import { ContentBox } from "./ContentBox";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 

@@ -1,17 +1,6 @@
-import {
-  Grid,
-  GridItem,
-  List,
-  ListIcon,
-  ListItem,
-  Text,
-  Flex,
-  Heading,
-  Progress,
-} from "@chakra-ui/react";
+import { Grid, GridItem, Heading } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { ContentBox } from "../components/ContentBox";
 import { Navigation } from "../components/Navigation";
 import bioJson from "../data/bio.json";
 import likeJson from "../data/like.json";
