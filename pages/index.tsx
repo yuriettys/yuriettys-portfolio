@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         </GridItem>
         <Grid
           backgroundColor="#F5F5F5"
-          padding={8}
+          padding={{ sm: 5, md: 8 }}
           gridTemplateColumns={{ sm: "1fr", md: "50% 1fr", xl: "70% 1fr" }}
           gridTemplateRows="auto auto auto"
           gap={8}

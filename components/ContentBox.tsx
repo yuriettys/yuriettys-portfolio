@@ -13,7 +13,7 @@ export const ContentBox: React.FC<Props> = ({ title, children }) => {
       </Heading>
       <Box
         backgroundColor="#fff"
-        padding={8}
+        padding={{ sm: 5, md: 8 }}
         marginTop={4}
         borderRadius={8}
         border={"#F2F0ED 1px solid"}

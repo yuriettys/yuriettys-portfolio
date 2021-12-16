@@ -35,11 +35,10 @@ const StoryIndex = ({ posts }: Props) => {
         </GridItem>
         <Grid
           backgroundColor="#F5F5F5"
-          padding={8}
+          padding={{ sm: 5, md: 8 }}
           gridTemplateColumns="1fr"
-          gap={{ sm: 2, md: 8 }}
+          gap={8}
           alignContent="flex-start"
-          height="100vh"
         >
           <ContentBox title="Story">
             <Stack>

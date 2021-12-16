@@ -29,9 +29,13 @@ const StoryDetail = ({ data, content }: PostProps) => {
           <GridItem>
             <Navigation />
           </GridItem>
-          <Grid padding={0} overflow="hidden" maxHeight={"100%"}>
+          <Grid
+            padding={0}
+            overflow={{ sm: "visible", md: "hidden" }}
+            maxHeight={"100%"}
+          >
             <Box overflow="auto">
-              <Box padding={{ sm: 8, md: "32px 80px" }}>
+              <Box padding={{ sm: 5, md: "32px 80px" }}>
                 <Heading as="h1">{data.title}</Heading>
                 <Box margin="40px 0 48px">
                   <Text fontSize="sm">{data.term}</Text>
