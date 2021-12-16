@@ -19,6 +19,7 @@ import skillJson from "../data/skill.json";
 import historyJson from "../data/history.json";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import { History } from "../components/History";
+import { Skill } from "../components/Skill";
 
 const Home: NextPage = () => {
   return (
@@ -56,29 +57,7 @@ const Home: NextPage = () => {
             </Grid>
           </ContentBox>
           <History items={historyJson} />
-          <ContentBox title="Skill">
-            <Grid gap={8}>
-              {skillJson.map(({ name, value }, index) => {
-                return (
-                  <Grid gridTemplateColumns="200px 1fr" key={index}>
-                    <Text>{name}</Text>
-                    <Progress
-                      value={value}
-                      backgroundColor="#F7F1EC"
-                      size="lg"
-                      height="1.4rem"
-                      borderRadius="5px"
-                      sx={{
-                        "& > div": {
-                          background: "#FDBDA3",
-                        },
-                      }}
-                    />
-                  </Grid>
-                );
-              })}
-            </Grid>
-          </ContentBox>
+          <Skill items={skillJson} />
           <ContentBox title="Like">
             <List spacing={3}>
               {likeJson.map((text, index) => {
